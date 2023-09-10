@@ -6,8 +6,10 @@ class Branch{
         double rate = 0.10;
         int discount, amount;
         
-        if (price >= 3000){  //3000以上の場合
+        if (price >= 3000) {  //3000以上の場合
             discount = 300;
+        } else if(price >= 2000) {
+            discount = 200;
         } else {
             discount = 0;
         }
