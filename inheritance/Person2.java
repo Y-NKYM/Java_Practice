@@ -1,4 +1,5 @@
-/* final */
+/* final
+   型変換 */
 
 public class Person2{
     private String name;

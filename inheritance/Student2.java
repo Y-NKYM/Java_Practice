@@ -1,4 +1,5 @@
-/* final */
+/* final 
+   型変換*/
 
 public final class Student2 extends Person2{
     private int stuNo;
@@ -12,5 +13,9 @@ public final class Student2 extends Person2{
     public void display(){
         super.display();
         System.out.println("学籍番号：" + stuNo);
+    }
+
+    public void changeStuNo(int stuNo){
+        this.stuNo = stuNo;
     }
 }
