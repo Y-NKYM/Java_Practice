@@ -9,13 +9,15 @@ public class NameArrayList{
         names.add("鈴木");
         String search = args[0];
         boolean result = false;
-
-        for(int i = 0; i < names.size(); i++){
-            if(names.get(i).equals(search)){
-                result = true;
+        int i;
+        for(i = 0; i < names.size(); i++){
+            String name = names.get(i);
+            // System.out.println(name);
+            if(name.equals(search)){
+                break;
             }
         }
-        if(result){
+        if(i < names.size()){
             System.out.println(search + "さんは含まれています");
         } else {
             System.out.println(search + "さんは含まれていません");
