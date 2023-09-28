@@ -1,8 +1,8 @@
 // ４つのパッケージのインポート
 import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
 
 @WebServlet("/first")  //マッピング名の指定
 public class FirstServlet extends HttpServlet {  //HttpServlet継承
@@ -20,3 +20,10 @@ public class FirstServlet extends HttpServlet {  //HttpServlet継承
         out.println("</html>");
     }
 }
+
+/*
+コンパイル時の記述：
+tomcat version 10使用。
+CATALINA_HOMEにtomcatフォルダパスを設定した上で以下を記述
+javac -encoding utf-8 -classpath "%CATALINA_HOME%\lib\servlet-api.jar" FirstServlet.java
+*/
