@@ -1,0 +1,68 @@
+<body>
+    <!-- row -->
+    <table><tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+    </tbody></table>
+
+    <!-- col -->
+    <table><tbody>
+        <tr>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>d</td>
+        </tr>
+    </tbody></table>
+
+    <!-- rowgroup -->
+    <table><tbody>
+		<tr>
+        <th rowspan="2" scope="rowgroup">グループA</th>
+        <th scope="row">見出し1</th>
+        <td>データ1-1</td>
+        <td>データ1-2</td>
+    </tr>
+    <tr>
+        <th scope="row">見出し2</th>
+        <td>データ2-1</td>
+        <td>データ2-2</td>
+    </tr>
+    </tbody></table>
+
+    <!-- colgroup -->
+    <table><tbody>
+            <tr>
+            <th colspan="2" scope="colgroup">グループA</th>
+        </tr>
+        <tr>
+            <th scope="col">見出し1</th>
+            <th scope="col">見出し2</th>
+        </tr>
+        <tr>
+            <td>データ1-1</td>
+            <td>データ1-2</td>
+        </tr>
+        <tr>
+            <td>データ2-1</td>
+            <td>データ2-2</td>
+        </tr>
+    </tbody></table>
+
+</body>
+
+
